@@ -1,4 +1,4 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/k8LX84VP)
+//[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/k8LX84VP)*/
 :encoding: utf-8
 :lang: ja
 :scripts: cjk
@@ -191,7 +191,15 @@ image::sample01_class_01.png[{full-width}]
 [source,shell]
 ----
 git status
-// ここに上記コマンドの実行結果（画像ではなくテキスト）を貼り付ける
+// On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   images/sample01_class_01.png
+
+no changes added to commit (use "git add" and/or "git commit -a")
 ----
 
 問題がなければプッシュしなさい。問題があれば、TAに相談しなさい。
@@ -199,7 +207,15 @@ git status
 [source,shell]
 ----
 git push
-// ここに上記コマンドの実行結果（画像ではなくテキスト）を貼り付ける
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 20.42 KiB | 10.21 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/cit-prjex-2025/sample-code-and-model-cigi23130-shu-gi.git
+   57a9bde..90ef442  main -> main
 ----
 
 また、 `git log` を実行して過去の処理について確認しなさい。
