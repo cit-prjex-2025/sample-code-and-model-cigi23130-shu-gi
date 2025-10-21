@@ -123,6 +123,7 @@ void porter_transport(void) {
       p_entry = true;
     }
     if( p_entry ) {
+      horn_arrived();
       tracer_stop();
     }
     break;
