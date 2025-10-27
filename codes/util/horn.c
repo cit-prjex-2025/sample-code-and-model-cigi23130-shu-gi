@@ -5,9 +5,9 @@ void horn_warning(void) {
   ev3_speaker_set_volume(10);
 
   for(int i = 0; i < 4; i++) {
-    ev3_speaker_play_tone(NOTE_E4, duration); /* ƒ~ */
+    ev3_speaker_play_tone(NOTE_E4, duration); /* ï¿½~ */
     dly_tsk(duration);
-    ev3_speaker_play_tone(NOTE_C4, duration); /* ƒh */
+    ev3_speaker_play_tone(NOTE_C4, duration); /* ï¿½h */
     dly_tsk(duration);
   }
   ev3_speaker_stop();
@@ -18,9 +18,9 @@ void horn_confirmation(void) {
   ev3_speaker_set_volume(10);
 
   for(int i = 0; i < 2; i++) {
-    ev3_speaker_play_tone(NOTE_C4, duration); /* ƒh */
+    ev3_speaker_play_tone(NOTE_C4, duration); /* ï¿½h */
     dly_tsk(duration);
-    ev3_speaker_play_tone(NOTE_F4, duration); /* ƒtƒ@ */
+    ev3_speaker_play_tone(NOTE_F4, duration); /* ï¿½tï¿½@ */
     dly_tsk(duration);
   }
   ev3_speaker_stop();
@@ -30,10 +30,10 @@ void horn_arrived(void) {
   const int duration = 100 * 1000;
   ev3_speaker_set_volume(10);
 
-  ev3_speaker_play_tone(NOTE_F4, duration); /* ƒtƒ@ */
+  ev3_speaker_play_tone(NOTE_F4, duration); /* ï¿½tï¿½@ */
   dly_tsk(duration * 3);
   ev3_speaker_stop();
-  ev3_speaker_play_tone(NOTE_F4, duration * 3 ); /* ƒtƒ@ */
+  ev3_speaker_play_tone(NOTE_F4, duration * 3 ); /* ï¿½tï¿½@ */
   dly_tsk(duration * 3);
   ev3_speaker_stop();
 }

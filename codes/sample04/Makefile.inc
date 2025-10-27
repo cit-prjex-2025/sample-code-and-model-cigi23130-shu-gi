@@ -5,10 +5,11 @@ SRCLANG := c
 APPL_ASMOBJS :=
 ifdef USE_CXX
 	APPL_CXXOBJS +=
-	APPL_COBJS += util.o
+	APPL_COBJS += util.o horn.o timer.o
 else
-	APPL_COBJS += util.o
+	APPL_COBJS += util.o horn.o timer.o
 endif
+
 
 APPL_DIRS += $(mkfile_path)app $(mkfile_path)/../util
 INCLUDES += \
